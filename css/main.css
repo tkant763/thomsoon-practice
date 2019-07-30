@@ -113,8 +113,17 @@ img {
     width: 100%;
 }
 
+section {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
 .content-wrapper {
-    width: 95%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
 }
 
 /* Header Styles */
@@ -127,13 +136,6 @@ header {
     color: #ffffff;
 }
 
-header .content-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-
-}
-
 .logo {
     display: flex;
     justify-content: center;
@@ -144,7 +146,7 @@ header .content-wrapper {
 .logo figure {
     display: flex;
     justify-content: center;
-    width: 10%;
+    width: 30%;
     margin: 0 0 100px 0;
 }
 
@@ -163,7 +165,6 @@ header .content-wrapper {
     font-size: 2.125em;
     letter-spacing: 0.25em;
     width: 100%;
-
 }
 
 .header-divider {
@@ -203,6 +204,72 @@ header button {
     padding: 60px 0;
     font-size: 2em;
 }
+
+/* Menu Styles */
+
+.about-header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: solid 1px #f2f2f2;
+}
+
+.about-header .about-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    width: 80%;
+}
+
+.about-header h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    color: #3c3c3c;
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+}
+
+.about-header nav {
+    width: 100%;
+    flex-flow: row wrap;
+}
+
+.about-header nav ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.about-header nav ul li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 1.75em;
+    line-height: 1.75em;
+}
+
+.about-header nav ul li a {
+    text-decoration: none;
+    color: #3c3c3c;
+}
+
+.about-header nav ul li a:hover {
+    color: #ada074;
+}
+
+.about-main {
+    width: 100%;
+}
+
+.about-grid {
+    width: 100%;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -292,16 +359,64 @@ header button {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+   @media only screen and (min-width: 768px) {
+       /* General styles */
+       .content-wrapper,
+       .about-wrapper {
+           max-width: 640px;
+       }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+       .logo figure {
+           width: 20%;
+       }
+
+       .about-header nav ul {
+           display: flex;
+           justify-content: center;
+       }
+
+       .about-header nav ul li {
+           font-size: 1.25em;
+       }
+   }
+
+   @media only screen and (min-width: 1200px) {
+       /*Desktop styles here */
+        .content-wrapper,
+        .about-wrapper {
+            max-width: 960px;
+            width: 47%;
+        }
+
+        .logo figure {
+            width: 10%;
+        }
+
+        .about-header .about-wrapper {
+            display: flex;
+            justify-content: space-between;
+            flex-flow: row nowrap;
+            padding: 10px 0;
+        }
+
+        .about-header h3 {
+            width: 10%;
+            padding: 0;
+        }
+
+        .about-header nav {
+            width: 40%;
+        }
+
+        .about-header nav ul {
+            margin: 0;
+        }
+
+        .about-header nav ul li {
+            font-size: 0.9375em;
+        }
+    }
+
 
 /* ==========================================================================
    Print styles.
