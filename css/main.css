@@ -107,6 +107,7 @@ html {
 body {
     font-size: 1em;
     font-family: 'Lato', sans-serif;
+    color: #a4a4a4;
 }
 
 img {
@@ -119,11 +120,27 @@ section {
     flex-flow: row wrap;
 }
 
+p {
+    font-weight: 300;
+}
+
 .content-wrapper {
     width: 80%;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+}
+
+.divider-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.divider {
+    height: 1px;
+    width: 80px;
+    background: #000000;
 }
 
 /* Header Styles */
@@ -177,7 +194,6 @@ header {
 }
 
 .header-content p {
-    font-weight: 300;
     font-size: 0.875em;
     width: 100%;
     text-align: center;
@@ -228,10 +244,12 @@ header button {
     width: 100%;
     text-align: center;
     padding: 50px;
+    font-size: 1.625em;
 }
 
 .about-header nav {
     width: 100%;
+    display: flex;
     flex-flow: row wrap;
 }
 
@@ -246,6 +264,7 @@ header button {
     list-style: none;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     text-transform: uppercase;
     font-size: 1.75em;
@@ -261,12 +280,75 @@ header button {
     color: #ada074;
 }
 
+/* About Styles */
+
 .about-main {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-bottom: 30px;
+}
+
+.about-main h2 {
+    font-size: 2.125em;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    color: #000000;
+    letter-spacing: .175em;
+}
+
+.about-main p {
+    width: 50%;
+    text-align: center;
+    font-size: 0.875em;
 }
 
 .about-grid {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.about-grid-item {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ada074;
+    border: solid 2px #f0f0f0;
+    border-radius: 180px;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+}
+
+.icon .fas {
+    font-size: 2.125em;
+}
+
+.about-grid-item h3 {
+    width: 100%;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.625em;
+    text-align: center;
+    letter-spacing: .175em;
+}
+
+.about-grid-item p {
+    font-size: 0.875em;
+    text-align: center;
+    line-height: 2em;
 }
 
 
@@ -378,6 +460,11 @@ header button {
        .about-header nav ul li {
            font-size: 1.25em;
        }
+
+       .about-grid-item {
+           width:30%;
+           justify-content: space-around;
+       }
    }
 
    @media only screen and (min-width: 1200px) {
@@ -397,6 +484,7 @@ header button {
             justify-content: space-between;
             flex-flow: row nowrap;
             padding: 10px 0;
+            width: 47%;
         }
 
         .about-header h3 {
@@ -405,7 +493,8 @@ header button {
         }
 
         .about-header nav {
-            width: 40%;
+            width: 50%;
+            min-width: 375px;
         }
 
         .about-header nav ul {
