@@ -120,8 +120,32 @@ section {
     flex-flow: row wrap;
 }
 
+h2 {
+    font-size: 2.125em;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    color: #000000;
+    letter-spacing: .175em;
+}
+
 p {
     font-weight: 300;
+    line-height: 2em;
+}
+
+.button {
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 0px 40px;
+}
+
+.button p {
+    line-height: 1em;
+}
+
+.button a {
+    text-decoration: none;
 }
 
 .content-wrapper {
@@ -201,13 +225,12 @@ header {
     margin-bottom: 155px;
 }
 
-header button {
-    background: #797979;
+header .head-button {
     border: 1px solid #ffffff;
+}
+
+.head-button a {
     color: #ffffff;
-    text-transform: uppercase;
-    font-size: 1em;
-    padding: 15px 40px;
 }
 
 .arrow-icon {
@@ -287,22 +310,14 @@ header button {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    margin-bottom: 30px;
-}
-
-.about-main h2 {
-    font-size: 2.125em;
-    text-transform: uppercase;
-    text-align: center;
-    width: 100%;
-    color: #000000;
-    letter-spacing: .175em;
+    margin: 90px 0 30px;
 }
 
 .about-main p {
     width: 50%;
     text-align: center;
     font-size: 0.875em;
+    margin-top: 30px;
 }
 
 .about-grid {
@@ -310,6 +325,7 @@ header button {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
+    margin-bottom: 100px;
 }
 
 .about-grid-item {
@@ -348,9 +364,31 @@ header button {
 .about-grid-item p {
     font-size: 0.875em;
     text-align: center;
-    line-height: 2em;
 }
 
+/* Portfolio Styles */
+
+#portfolio {
+    background: #f3f3f3;
+}
+
+.portfolio-header {
+    width: 100%;
+    margin: 150px 0 70px;
+}
+
+#portfolio figure {
+    margin: 11px;
+}
+
+.port-button {
+    border: 1px solid #000000;
+    margin: 160px 0 100px;
+}
+
+.port-button a {
+    color: #000000;
+}
 
 /* ==========================================================================
    Helper classes
@@ -464,6 +502,12 @@ header button {
        .about-grid-item {
            width:30%;
            justify-content: space-around;
+       }
+
+       .left-column,
+       .middle-column,
+       .right-column {
+           flex-basis: 33%;
        }
    }
 
