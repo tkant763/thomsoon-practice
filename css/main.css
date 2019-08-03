@@ -329,7 +329,7 @@ header .head-button {
 }
 
 .about-grid-item {
-    width:100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -383,11 +383,58 @@ header .head-button {
 
 .port-button {
     border: 1px solid #000000;
-    margin: 160px 0 100px;
+    margin: 160px 75px 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.port-button p {
+    text-align: center;
 }
 
 .port-button a {
     color: #000000;
+}
+
+/* Partners Styles */
+
+.partners {
+    background: #444444;
+    display: flex;
+}
+
+.partners h4 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.8975em;
+    color: #ffffff;
+    font-weight: 300;
+    letter-spacing: 0.075em;
+    margin: 90px 0 75px;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 200px;
+    margin-bottom: 90px;
+}
+
+.partner-logo {
+    width: 35px;
+}
+
+.archiq {
+    width: 52px;
+}
+
+.thomsoon {
+    width: 53px;
+}
+
+.alex {
+    width: 111px;
 }
 
 /* ==========================================================================
@@ -509,6 +556,12 @@ header .head-button {
        .right-column {
            flex-basis: 33%;
        }
+
+       .partners .logos {
+           width: 100%;
+           justify-content: space-around;
+           align-items: center;
+       }
    }
 
    @media only screen and (min-width: 1200px) {
@@ -549,6 +602,7 @@ header .head-button {
             font-size: 0.9375em;
         }
     }
+
 
 
 /* ==========================================================================
