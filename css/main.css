@@ -437,6 +437,102 @@ header .head-button {
     width: 111px;
 }
 
+/* Contact Styles */
+
+.contact-header {
+    width: 100%;
+    margin-bottom: 115px;
+}
+
+.contact-header h3 {
+    text-align: center;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form form {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000000;
+    font-size: 0.875em;
+    width: 100%;
+}
+
+.form-bottom {
+    width: 100%;
+}
+
+form input {
+    background: #f8f7f7;
+    border-top: solid 1px #000000;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    width: 80%;
+    height: 35px;
+    margin: 20px 0 75px;
+}
+
+.form-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+form input[type="submit"] {
+    background: #ffffff;
+    border: none;
+    text-align: center;
+    width: 60px;
+}
+
+form textarea {
+    outline: none;
+    resize: none;
+    overflow: auto;
+    background: #f8f7f7;
+    border-top: solid 1px #000000;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    height: 120px;
+    margin-top: 20px;
+}
+
+.contact-text {
+    width: 100%;
+    color: #000000;
+    font-size: 0.875em;
+}
+
+.contact-text address {
+    font-style: normal;
+}
+
+.contact-text a {
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social-icons ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 75%;
+    font-size: 1.25em;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -533,9 +629,13 @@ header .head-button {
            max-width: 640px;
        }
 
+       /* Header Styles */
+
        .logo figure {
            width: 20%;
        }
+
+       /* Menu Styles */
 
        .about-header nav ul {
            display: flex;
@@ -546,10 +646,14 @@ header .head-button {
            font-size: 1.25em;
        }
 
+       /* About Styles */
+
        .about-grid-item {
            width:30%;
            justify-content: space-around;
        }
+
+       /* Portfolio Styles */
 
        .left-column,
        .middle-column,
@@ -557,11 +661,50 @@ header .head-button {
            flex-basis: 33%;
        }
 
+       /* Partners Styles */
+
        .partners .logos {
            width: 100%;
            justify-content: space-around;
            align-items: center;
        }
+
+       /* Contact Styles */
+
+       .contact-wrapper {
+           width: 100%;
+           display: flex;
+           justify-content: space-between;
+       }
+
+       .form-top {
+           display: flex;
+           justify-content: space-between;
+       }
+
+       .form-name,
+       .form-email {
+           width: 45%;
+       }
+
+       .form,
+       .contact-text {
+           width: 48%;
+       }
+
+       .form {
+           max-width: 380px;
+       }
+
+       .contact-text p {
+           line-height: 3em;
+           margin: 0
+       }
+
+       .social-icons ul {
+           width: 40%;
+       }
+
    }
 
    @media only screen and (min-width: 1200px) {
